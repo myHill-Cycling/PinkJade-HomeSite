@@ -1,0 +1,19 @@
+---
+import Head from "../components/partials/_head.astro";
+import Header from "../components/partials/_header.astro";
+import Footer from "../components/partials/_footer.astro";
+---
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<Head/>
+		<slot name="head"/>
+	</head>
+	<body>
+		<Header />
+			<main>
+				<slot />
+			</main>
+		<Footer />
+	</body>
+</html>
