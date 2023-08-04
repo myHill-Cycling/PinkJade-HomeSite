@@ -2,11 +2,17 @@
 import Head from "../components/partials/_head.astro";
 import Header from "../components/partials/_header.astro";
 import Footer from "../components/partials/_footer.astro";
+
+const { title, description, robots } = Astro.props;
 ---
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<Head/>
+		<Head
+			title={title}
+			description={description}
+			robots={robots}
+			/>
 		<slot name="head"/>
 	</head>
 	<body>
